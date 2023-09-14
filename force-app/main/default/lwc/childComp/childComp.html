@@ -2,7 +2,17 @@
     <lightning-card variant="Narrow" title="Child Comp" icon-name="standard:account">
         <p>
             <lightning-formatted-text value={display}></lightning-formatted-text>
+
+        </p>
+        <p>
+            <lightning-formatted-text value={displayGreeting}></lightning-formatted-text>
+
+        </p>
+        <p>
+            <lightning-formatted-text value={user.fName}></lightning-formatted-text>
+            <lightning-formatted-text value={user.lName}></lightning-formatted-text>
             <lightning-formatted-text value={user.age}></lightning-formatted-text>
+
         </p>
     </lightning-card>
 </template>

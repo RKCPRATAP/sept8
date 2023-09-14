@@ -1,10 +1,10 @@
 import { LightningElement } from "lwc";
 
 export default class ParentComp extends LightningElement {
-  greeting = "Welcome to Rohit";
+  greeting = "Welcome to Tech Journy With Ankit";
   userDetails = {
     fName: "Ayansh",
     lName: "Singh",
-    age: 33
+    age: "33"
   };
 }
