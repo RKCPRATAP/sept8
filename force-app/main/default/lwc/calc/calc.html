@@ -1,0 +1,23 @@
+<template>
+    <lightning-card variant="Narrow" title="Calculator" icon-name="standard:account">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="number" name="input1" value={num1} label="Enter first number"
+                placeholder="Enter First Number" onchange={changeNum}></lightning-input>
+            <lightning-input type="number" name="input2" value={num2} label="Enter Second number"
+                placeholder="Enter Second Number" onchange={changeNum}></lightning-input>
+        </div>
+        <div class="slds-var-m-around_medium">
+            <lightning-button variant="brand" label="Add" onclick={handleClick}
+                class="slds-var-p-around_small"></lightning-button>
+            <lightning-button variant="brand" label="Sub" onclick={handleClick}
+                class="slds-var-p-around_small"></lightning-button>
+            <lightning-button variant="brand" label="Mul" onclick={handleClick}
+                class="slds-var-p-around_small"></lightning-button>
+            <lightning-button variant="brand" label="Div" onclick={handleClick}
+                class="slds-var-p-around_small"></lightning-button>
+        </div>
+        <div>
+            The Result is :{result}
+        </div>
+    </lightning-card>
+</template>

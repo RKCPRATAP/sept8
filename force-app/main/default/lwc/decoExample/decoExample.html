@@ -1,0 +1,16 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base">
+      <div>
+         My Name is {arr} <br>
+         My Detais are {myDetails.fName} {myDetails.lName} {myDetails.age} 
+
+      </div>
+      <div>
+        <lightning-button 
+          variant="brand"
+          label="Change Data" 
+          onclick={handleClick}
+        ></lightning-button>
+      </div>
+    </lightning-card>
+</template>
