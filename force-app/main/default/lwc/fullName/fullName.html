@@ -1,0 +1,11 @@
+<template>
+    <lightning-card class="slds-var-p-around_medium" icon-name="standard:account" variant="base" title="Full Name">
+        <lightning-input type="text" label="Enter First Name" onchange={changeHandle1}></lightning-input>
+
+        <lightning-input type="text" label="Enter Second Name" onchange={changeHandle2}></lightning-input>
+        <div class="slds-var-p-around_medium">
+            <lightning-button variant="brand" label="FUll Name" onclick={handleClick}></lightning-button>
+            {fullName}
+        </div>
+    </lightning-card>
+</template>
